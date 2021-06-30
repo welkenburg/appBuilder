@@ -1,0 +1,14 @@
+/* dark theme */
+#topRow{
+	background: #ff0000;
+}
+
+label{
+	foreground: #E2E2E2;
+	background: #282828;
+}
+
+entry{
+	background: #636363;
+	foreground: #E2E2E2;
+}

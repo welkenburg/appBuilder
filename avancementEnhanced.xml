@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<app title='Avancement' width='' height=''>
+	<frame type='grid'>
+		<row id='topRow'>
+			<label> Equation : </label>
+			<entry id='quantity_A' default='1'/>
+			<entry id='name_A' default='C2H6O'/>
+			<label> + </label>
+			<entry id='quantity_B' default='3'/>
+			<entry id='name_B' default='O2'/>
+			<label> ➜ </label>
+			<entry id='quantity_C' default='2'/>
+			<entry id='name_C' default='CO2'/>
+			<label> + </label>
+			<entry id='quantity_D' default='3'/>
+			<entry id='name_D' default='H2O'/>
+		</row>
+		<row>
+			<label> Etat initial (mol) : </label>
+			<entry id='n_quantity_A' default='100'/>
+			<entry id='n_quantity_B' pos='4' default='100'/>
+		</row>
+		<row>
+			<label> Etat intermedaire (mol) : </label>
+			<label id='xn_quantity_A'></label>
+			<label id='xn_quantity_B' pos='4'></label>
+			<label id='xn_quantity_C' pos='7'></label>
+			<label id='xn_quantity_D' pos='10'></label>
+		</row>
+		<row>
+			<graph id='graph_A' pos='1' width='30' height='100' fill="#FF0000" />
+			<graph id='graph_B' pos='4' width='30' height='100' fill="#FF0000" />
+			<graph id='graph_C' pos='7' width='30' height='100' fill="#0000FF" value='0'/>
+			<graph id='graph_D' pos='10' width='30' height='100' fill="#0000FF" value='0'/>
+		</row>
+	</frame>
+	<frame type='pack'>
+		<label> Avancement (%) : </label>
+		<scale id='scale' command='onScale' orient='horizontal' length='300'/>
+	</frame>
+</app>

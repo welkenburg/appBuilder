@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<app title='test'>
+	<frame id='topRow'>
+		<row>
+			<label fill='#ff0000' background='#00ffff'> Coucou </label>
+		</row>
+		<row pos='3'>
+			<label> Name : </label>
+			<entry id='name' default='test' fill='#00FF00'/>
+		</row>
+		<row>
+			<graph width='30' height='100' fill="#FFFF22" value="100"/>
+			<scale id='scale' orient='horizontal' command='onScale' length='300' pos='2' to='200'/>
+		</row>
+	</frame>
+</app>
