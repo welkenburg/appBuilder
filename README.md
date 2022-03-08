@@ -1,3 +1,3 @@
 # appBuilder
 
-library to make simple apps in python / Tk
+library to make simple apps in python / Tk and xml
